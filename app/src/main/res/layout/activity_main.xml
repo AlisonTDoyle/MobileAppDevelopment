@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Page title-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="BMI Calculator"
+            android:textAlignment="center"
+            android:textSize="36dp"/>
+
+         <!--User measurements form-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Weight (Kg):"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:id="@+id/userWeightEditText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Height (Cm):"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"
+            android:id="@+id/userHeightEditText"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Calculate BMI"
+            android:id="@+id/calculateBmiButton"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Reset"
+            android:id="@+id/resetFormButton"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
