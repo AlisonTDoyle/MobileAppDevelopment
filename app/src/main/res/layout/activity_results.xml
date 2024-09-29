@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="32dp">
+        android:padding="48dp">
         <!--Bmi result-->
         <TextView
             android:layout_width="match_parent"
@@ -28,8 +28,18 @@
 
         <!--Bmi visual indicator-->
         <ProgressBar
+            android:id="@+id/bmiIndicatorProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="240dp"/>
+            android:max="60"
+            android:layout_height="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:id="@+id/summaryTextView"/>
 
         <!--Return button-->
         <Button
@@ -37,6 +47,7 @@
             android:layout_height="48dp"
             android:text="Return"
             android:id="@+id/returnButton"/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

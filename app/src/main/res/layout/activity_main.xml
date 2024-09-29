@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:padding="16dp"
+        android:padding="48dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!--Page title-->
@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="24dp"
             android:text="Height (Cm):"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
